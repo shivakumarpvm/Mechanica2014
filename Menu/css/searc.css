@@ -1,0 +1,110 @@
+.wrapper
+{
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 10px;
+	margin-left:20px;
+	z-index:10000;	
+}
+.searchMeme-container
+{
+    width: 450px;
+}
+.searchMeme-container div
+{
+    margin: 0;
+    padding: 0;
+}
+.searchMeme-button-icon
+{
+    background-image: url(../img/icon-search.png);
+    top: 20%;
+    left: 20%;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+}
+/*.searchMeme-button-searching
+{
+    background-image: url(../images/loading.gif);
+    position: relative;
+    top: 33%;
+    left: 36%;
+    width: 60px;
+    height: 50px;
+    background-repeat: no-repeat;
+}*/
+.searchMeme-water-mark
+{
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 5-7 */
+    filter: alpha(opacity=50); /* Netscape */
+    -moz-opacity: 0.5; /* Safari 1.x */
+    -khtml-opacity: 0.5; /* Good browsers */
+    opacity: 0.5;
+}
+.orange-normal
+{
+    background: #f8c70f; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f8c70f 0%, #f2a309 100%, #f2a309 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8c70f), color-stop(43%,#f2a309), color-stop(100%,#f2a309)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f8c70f 0%,#f2a309 100%,#f2a309 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f8c70f 0%,#f2a309 100%,#f2a309 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f8c70f 0%,#f2a309 100%,#f2a309 100%); /* IE10+ */
+    background: linear-gradient(top,  #f8c70f 0%,#f2a309 100%,#f2a309 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8c70f', endColorstr='#f2a309',GradientType=0 ); /* IE6-9 */
+}
+.orange-hover
+{
+    background: #f2a309; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f2a309 0%, #f8c70f 100%, #f8c70f 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2a309), color-stop(43%,#f8c70f), color-stop(100%,#f8c70f)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f2a309 0%,#f8c70f 100%,#f8c70f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f2a309 0%,#f8c70f 100%,#f8c70f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f2a309 0%,#f8c70f 100%,#f8c70f 100%); /* IE10+ */
+    background: linear-gradient(top,  #f2a309 0%,#f8c70f 100%,#f8c70f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2a309', endColorstr='#f8c70f',GradientType=0 ); /* IE6-9 */
+}
+
+
+.searchMeme-input-left input
+{
+    width: 350px;
+    background-color: #fbfbfb;
+    border: none;
+    color: black;
+    
+    padding: 10px;
+    font-size: 15px;
+    -webkit-border-radius: 0px 6px 6px 0px;
+    -moz-border-radius: 0px 6px 6px 0px;
+    border-radius: 0px 6px 6px 0px;
+    -webkit-box-shadow: inset 1px 1px 1px 0px #000;
+    -moz-box-shadow: inset 1px 1px 1px 0px #000;
+    box-shadow: inset 1px 1px 1px 0px #000;
+    margin-top: 0px;
+}
+.searchMeme-input-left
+{
+    float: left;
+    width: 270px;
+    overflow:hidden;
+}
+.searchMeme-button-left
+{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    float: left;
+  
+}
+.searchMeme-round-left
+{
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-radius: 4px 0px 0px 4px;
+    border-radius: 4px 0px 0px 4px;
+}

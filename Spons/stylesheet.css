@@ -1,0 +1,16 @@
+.pics{
+height:  70px;  
+    width:   100px;  
+    padding: 0;  
+    margin:  0;  
+   background-color:#000000
+}
+.pics img {  
+    padding: 15px;  
+    border:  1px solid #cccccc;  
+    background-color: #eeeeee;  
+    width:  100px; 
+    height: 70px; 
+    top: 0%; 
+    left: 0% 
+} 

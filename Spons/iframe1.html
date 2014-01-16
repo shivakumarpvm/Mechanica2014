@@ -1,0 +1,103 @@
+<!DOCTYPE html >
+    <html >
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sponsorship Page</title>
+        <link href="jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+        <script src="jquery.js"></script>
+        <script src="jquery.mCustomScrollbar.concat.min.js"></script>
+        <script>
+         (function($){
+            $(window).load(function(){
+                $("#spons_picscroll").mCustomScrollbar();
+                });
+            })(jQuery);
+        </script>
+        <style>
+	#spons_total{
+   	 position:absolute;
+    	height:100%;
+    	width:100%;
+   	 left:0%;
+	}
+	#spons_divscroll{
+    	position:absolute;
+    	top:-15%;
+    	left:0%;
+   	height:100%;
+   	width:100%;
+    	border:10px;
+	}
+	#spons_picscroll{
+    	position: absolute;
+    	left: 2.5%;
+    	top: 26%;
+    	width: 92%;
+    	height: 71%;
+    	overflow: auto;
+    	box-shadow: inset 0 0 10px #000;
+	border-radius:10px;
+    	border:10px solid black
+	}
+	#spons_picscroll img{
+     	height:20%;
+     	width:25%;
+     	margin:10px 10px;
+    	display:block;
+    	}
+	body,html{
+    	height: 100%;
+    	width: 100%;
+    	background:#320000;
+    	margin: 0;
+    	padding:0;
+    	border-radius: 20px;
+    	}
+   	#spons_total{
+    	background-repeat:no-repeat;
+    	background-size:cover;
+    	}
+	.mCSB_scrollTools .mCSB_draggerRail{
+	width:6px;
+	background:#000000; 
+	-webkit-border-radius:2px;
+ 	-moz-border-radius:2px;
+ 	border-radius:2px;}
+	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	width:6px;
+	-webkit-border-radius:2px;
+ 	-moz-border-radius:2px; 
+	border-radius:2px;
+	background-color: #D62929;
+	background-image: -webkit-linear-gradient(90deg,
+ 	transparent,
+ 	rgba(0, 0, 0, 0.4) 50%,
+	transparent,
+	transparent)
+	}
+	.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+	.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+	.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar	{background:#fcea6a;}
+        </style>
+    </head>
+    <body>
+      <div  id="spons_total">
+        <div id="spons_divscroll">
+        <center>
+            <div id="spons_picscroll">
+                <img src="http://www.mechanica.org.in/images/harshaes.jpg" >
+	<img src="http://www.mechanica.org.in/images/AVOCarbon.jpg" >
+	<img src="http://www.mechanica.org.in/images/indianspons.png" >
+	<img src="http://www.mechanica.org.in/images/lgspons.jpg" >
+	<img src="http://www.mechanica.org.in/images/expertshub.jpg" >
+	<img src="http://www.mechanica.org.in/images/solidworks.png" >
+	<img src="http://www.mechanica.org.in/images/2019.png" >
+	<img src="http://www.mechanica.org.in/images/mmfestlogo.jpg" >
+	<img src="http://www.mechanica.org.in/images/robospons.png" >
+	<img src="http://www.mechanica.org.in/images/alstrut2.jpg" >
+            </div>
+        </center>
+        </div>
+     </div>
+    </body>
+    </html>

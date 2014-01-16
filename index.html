@@ -1,0 +1,224 @@
+<html>
+<head>
+ <link href="css/bootstrap.css" rel="stylesheet">
+ <link href="css/flat-ui.css" rel="stylesheet">
+ <link rel="stylesheet" href="Menu/css/main1.css" />
+	<link rel="stylesheet" href="Menu/css/main.css" />	
+	<script type="text/javascript" src="Menu/js/jquery.1.10.2.min.js"></script>
+	<script type="text/javascript" src="Menu/js/gnmenu.js"></script>
+	<link rel="stylesheet" href="Menu/css/searc.css" />	
+	<script type="text/javascript" src="Menu/js/jquery.searchMeme.js"></script>
+ 
+ 
+ <style>
+ section{
+	 
+	 }
+#menubar{
+	border-radius:0px;
+	-moz-box-shadow: -1px 8px 22px 4px #000;
+	-webkit-box-shadow: -1px 8px 22px 4px #000;
+	box-shadow: -1px 8px 22px 4px #000;
+	}
+#about{
+	background: -webkit-radial-gradient(50% 0%, farthest-corner, rgb(255, 255, 255) 0%, rgb(200, 200, 200) 100%);
+	background:         radial-gradient(50% 0%, farthest-corner, rgb(255, 255, 255) 0%, rgb(200, 200, 200) 100%);
+	background: -moz-radial-gradient(50% 0%, farthest-corner, rgb(255, 255, 255) 0%, rgb(200, 200, 200) 100%);
+	} 
+ </style>
+ <style>
+
+/* reset webkit search input browser style */
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; /* remove the search and cancel icon */
+}
+
+/* search input field */
+input[type=search] {
+	background: #ededed url(images/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 130px;
+	background-color: #fff;
+	border-color: #6dcff6;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+/* placeholder */
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+
+#demo input[type=search] {
+margin-top:10px;
+	width: 25px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+	margin-left:10px;
+	
+}
+#demo input[type=search]:hover {
+	background-color: #fff;
+}
+#demo input[type=search]:focus {
+	width: 180px;
+	padding-left: 42px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+}
+#demo input:-moz-placeholder {
+	color: #999;
+}
+#demo input::-webkit-input-placeholder {
+	color: #999;
+}
+
+
+</style>
+
+
+
+
+</head>
+
+
+<body>
+<section id="elements">
+<div id="topbar" >
+<nav id="menubar" class="navbar navbar-default navbar-fixed-top" style="position:fixed;z-index:1000" data-0="top:-10%;" data-1200="top:0%;">
+	<ul>
+			<li><a href="#" class="icon icon-menu" id="btn-menu">Menu</a></li>
+	
+	</ul>
+	<form id="demo">
+	<input type="search" placeholder=""  >
+	</form>
+    
+	
+	
+</nav>
+				
+
+	<div id="sideNav" style="z-index:10000;">
+		<ul>
+			<!--<li class="searchForm"><a href="#" class="icon icon-search"><span><input type="text" placeholder="Search" class="search" /></span></a></li>-->
+			<li><a href="#" class="icon icon-home"><span>HOME</span></a></li>
+			<li><a href="#" class="icon icon-articles"><span>EVENTS</span></a>
+				<!--   SUB-MENU   
+				<ul >
+					<li><a href="#"><span>Web Design</span></a></li>
+					
+				 </ul>-->
+			</li>
+			<li><a href="#" class="icon icon-social"><span>HOSPITALITY</span></a>
+			<li><a href="#" class="icon icon-social"><span>CONTACT</span></a>
+			<li><a href="#" class="icon icon-social"><span>SPONSORS</span></a>
+			<li><a href="#" class="icon icon-social"><span>ABOUT</span></a>
+							
+			</li>
+		</ul>	
+	
+	</div>	
+	
+
+
+</div>
+
+
+</section>
+
+<section id="home" style="position:fixed;" data-0="top:0%;" data-1200="top:-100%;"data-2400="top:-100%;"
+    data-3600="top:-100%;" data-4800="top:-100%;">
+    <img src="images/main.jpg" width="100%" height="100%"/>
+    
+    </section>
+    
+    
+    
+    
+<section id="about" style="position:fixed;" data-0="top:100%;" data-1200="top:0%;"data-2400="top:-100%;"
+    data-3600="top:-100%;" data-4800="top:-100%;" >
+     <img src="images/main2.jpg" width="80%" height="80%"/>
+    </section>
+    
+    
+    
+<section id="events" style="position:fixed;"  data-0="top:100%;" data-1200="top:100%;"data-2400="top:0%;"
+    data-3600="top:-100%;" data-4800="top:-100%;" >
+     <img src="images/main.jpg" width="100%" height="100%"/>
+    </section>
+    
+    
+    
+<section id="spons" style="padding-top:5%;position:fixed;" data-0="top:100%;" data-1200="top:100%;"data-2400="top:100%;"
+    data-3600="top:0%;" data-4800="top:-100%;">
+     <img src="images/main.jpg" width="100%" height="100%"/>
+    </section>
+    
+    
+<section id="contact" style="position:fixed;" data-0="top:100%;" data-3600="top:100%;" 
+data-4800="top:0%;">
+ <img src="images/main.jpg" width="100%" height="100%"/>
+</section>
+    
+    
+    
+<section id="end" style="position:fixed;"  data-0="top:100%;" data-4800="top:100%;" 
+data-6000="top:0%;">
+ <img src="images/main.jpg" width="100%" height="100%"/>
+</section>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/skrollr.js"></script>
+<script src="js/skrollr.menu.js"></script>
+ <script type="text/javascript">
+   	
+	var s = skrollr.init({
+	smoothScrolling: true
+});
+skrollr.menu.init(s, {
+    animate: true,
+    easing: 'sqrt',//'easeInOutCubic',//Trying for different easing
+    duration: function (currentTop, targetTop) {
+        return 1200 //Math.abs(currentTop - targetTop) * 2;
+    },
+});
+	</script>
+	
+	
+	
+	
+</html>
