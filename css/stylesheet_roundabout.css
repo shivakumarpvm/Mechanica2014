@@ -1,17 +1,56 @@
-html { padding: 0; margin: 0; }
-body {
-	font-family: Palatino, Georgia, "Times New Roman", serif;
-	padding: 0;
-	margin: 0;
-	font-size: 1em;
-}
-
-h1 {
-	font-size: 4em;
-	letter-spacing: -1px;
-	margin: 1em 0 0.5em;
-	text-align: center;
-}
+#contactul {
+				list-style: none;
+				padding: 0;
+				margin: 0 auto;
+				width: 70em;
+				height: 27em;
+			}
+			#contactul li {
+				height: 10em;
+				width: 30em;
+				cursor: pointer;
+			}
+			#contactul li.roundabout-in-focus {
+					cursor: default;
+			}
+			#contactul li div {
+				display: block;
+				padding: 0.25em;
+				height: 15em;
+				width: 30em;
+				border-radius:10px;
+				text-align:top;
+				color:#000000;
+				font-family:comic sans ms
+			}
+			#a{
+				background-color:#009999;
+				
+			}
+			#b{
+				background-color:#7A3D5C;
+			}
+			#c{
+				background-color:#CC3300;
+			}
+			#d{
+				background-color:#6B8FB2;
+			}
+			#e{
+				background-color:#B2B200;
+			}
+			#f{
+				background-color:#A30000;
+			}
+			#g{
+				background-color:#305930;
+			}
+			#h{
+				background-color:#CC0052;
+			}
+			#i{
+				background-color:#660033;
+			}		
 
 .interact {
 	border-top: 1px solid #ccc;
