@@ -171,8 +171,9 @@ table {
 
 #lab article {
 	padding-top: 1em;
-	width: 110%;
-	margin: 0 auto;
+	width: 1486px;
+	margin-top:63px;
+	/*margin: 0 auto;*/
 	position:fixed;
 	/*left:-100%;*/
 }
