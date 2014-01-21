@@ -5,10 +5,13 @@
     font-family:arial black;
     font-size:200%;
     
-    border-color: #fff;
-    border-width: 2px;
+    border-color: black;
+   
     border-style: solid;
-    box-shadow: 0 0 2px 1px #aaa;
+   
+	
+	position:absolute;
+	right:10px;
 }
 .menu li {
 position:absolute
@@ -21,6 +24,15 @@ position:absolute
      color:#AEF0ED;
 
 	position:absolute;
+	
+
+	}
+.menu li:first-child a{
+    text-decoration: none;
+     color:#AEF0ED;
+
+	position:absolute;
+	background:red;
 
 	}
 
