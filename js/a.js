@@ -2,11 +2,11 @@
     var pluginName = 'circleMenu',
         defaults = {
             depth: 0,
-            item_diameter: 90,
+            
             circle_radius: 180,
             angle:{
-                start: -10,
-                end: 100
+                start: -20,
+                end: 120
             },
             speed: 500,
             delay: 500,
