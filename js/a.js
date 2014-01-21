@@ -6,7 +6,7 @@
             circle_radius: 180,
             angle:{
                 start: -20,
-                end: 150
+                end: 120
             },
             speed: 500,
             delay: 500,
