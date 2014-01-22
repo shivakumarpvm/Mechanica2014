@@ -5,7 +5,7 @@
            item_diameter: 90,
             circle_radius: 180,
             angle:{
-                start: -20,
+                start: 240,
                 end: 120
             },
             speed: 500,
