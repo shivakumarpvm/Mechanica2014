@@ -192,7 +192,10 @@ margin-top:10px;
 
 #colr
 {
-color:#E74C3C;}
+color:#E74C3C;
+text-align:center;
+margin-bottom:10px;
+background:green;}
 
 </style>
 
@@ -826,14 +829,14 @@ data-6000="top:0%;">
                 <ul class="menu" id="menu13">
                     <li><a  href="" style=""> CORES</a></li>
                       <li> <a class="trigger" data-animation="61 " data-goto="1" id="colr">FINANCE</a></li>
-                                            <li><a class="trigger " data-animation="39" data-goto="2" id="colr"> EVENTS</a></li>
-                                                <li><a class="trigger " data-animation="64" data-goto="3" id="colr"> SPONSRSHIP</a></li>
-                                                <li> <a class="trigger " data-animation="41" data-goto="4" id="colr">HOSPITALITY</a></li>
-                                                <li><a class="trigger " data-animation="67" data-goto="5" id="colr"> PUBLICITY</a></li>
-                                                <li><a class="trigger " data-animation="49" data-goto="6"id="colr"> QMS</a></li>
-						<li><a class="trigger" data-animation="52" data-goto="6" id="colr"> DESIGN</a></li>
-						<li><a class="trigger" data-animation="60" data-goto="7" id="colr"> WEBOPERATIONS</a></li>
-						<!--<li><a class="trigger" data-animation="62" data-goto="8"> 8</a></li>-->
+                      <li><a class="trigger " data-animation="39" data-goto="2" id="colr"> EVENTS</a></li>
+                       <li><a class="trigger " data-animation="64" data-goto="3" id="colr"> SPONSRSHIP</a></li>
+                       <li> <a class="trigger " data-animation="41" data-goto="4" id="colr">HOSPITALITY</a></li>
+                       <li><a class="trigger " data-animation="67" data-goto="5" id="colr"> PUBLICITY</a></li>
+                        <li><a class="trigger " data-animation="49" data-goto="6"id="colr"> QMS</a></li>
+						<li><a class="trigger" data-animation="52" data-goto="7" id="colr"> DESIGN</a></li>
+						<li><a class="trigger" data-animation="60" data-goto="8" id="colr"> WEBOPERATIONS</a></li>
+						<li><a class="trigger" data-animation="62" data-goto="9" id="colr"> SECRATARIES</a></li>
 						
                 </ul>
            </div>
@@ -877,13 +880,13 @@ data-6000="top:0%;">
     <div class="page page-6"  style="background:orange;height:400px;width:800px;left:100px;top:150px;" >
         <h1><strong>Page 6</strong></h1>
     </div>
-         <div class="page page-7" style="background:#0ac2d2;height:400px;width:800px;left:100px;top:150px;">
+     <div class="page page-7" style="background:#0ac2d2;height:400px;width:800px;left:100px;top:150px;">
         <h1><strong>Page 7</strong></h1>
     </div>
-         <div style=" background: #60d7a9;height:400px;width:700px;left:100px;top:150px;" class="page page-8">
+     <div style=" background: #60d7a9;height:400px;width:700px;left:100px;top:150px;" class="page page-8">
         <h1><strong>Page 8</strong></h1>
     </div>
-         <div class="page page-9" style="background:red;height:400px;width:800px;left:100px;top:150px;">
+     <div class="page page-9" style="background:red;height:400px;width:800px;left:100px;top:150px;">
         <h1><strong>Page 9</strong></h1>
     </div>
          <div class="page page-10" style="background:#0ac2d2;height:400px;width:800px;left:100px;top:150px;">
@@ -942,7 +945,8 @@ skrollr.menu.init(s, {
         <script>
             $(function(){
                
-                $('#menu13').circleMenu({direction:''});
+              //  $('#menu13').circleMenu({direction:'full'});
+				  $('#menu13').circleMenu({angle:{start:255, end:100}});
                
                 
                 $('a').on('click',function(evt){if($(this).attr('href')==='#'){evt.preventDefault();}});
