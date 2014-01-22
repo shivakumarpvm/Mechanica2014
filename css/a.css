@@ -1,6 +1,6 @@
 
 .menu li:first-child {
-    background:green;
+    background:transparent;
     font-weight:bold;
     font-family:arial black;
     font-size:200%;
@@ -18,6 +18,8 @@ position:absolute
   
     color:#fff;
     font-size:15px;
+	
+
 }
 .menu a{
     text-decoration: none;
@@ -30,9 +32,18 @@ position:absolute
 .menu li:first-child a{
     text-decoration: none;
      color:#AEF0ED;
+	 background:green;
+	 border-radius:45px;
+	 width:150px;
+	 height:90px;
+	 margin-left:-50px;
+	 
+	 
 
-	position:absolute;
-	background:red;
+	
+	
+
+
 
 	}
 

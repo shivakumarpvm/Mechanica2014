@@ -823,12 +823,12 @@ data-6000="top:0%;">
     	 <div id="ex-sides-half"  style="float:right;position:absolute;right:-800px;top:100px;">
                 
                 <ul class="menu" id="menu13">
-                    <li><a href="#"> CORES</a></li>
+                    <li><a  href="" style=""> CORES</a></li>
                       <li> <a class="trigger" data-animation="61 " data-goto="1" id="colr">FINANCE</a></li>
                                             <li><a class="trigger " data-animation="39" data-goto="2" id="colr"> EVENTS</a></li>
-                                                <li><a class="trigger " data-animation="64" data-goto="3" id="colr"> SPONSRSHIP & PR</a></li>
+                                                <li><a class="trigger " data-animation="64" data-goto="3" id="colr"> SPONSRSHIP</a></li>
                                                 <li> <a class="trigger " data-animation="41" data-goto="4" id="colr">HOSPITALITY</a></li>
-                                                <li><a class="trigger " data-animation="67" data-goto="5" id="colr"> PUBLICITY &MARKETING</a></li>
+                                                <li><a class="trigger " data-animation="67" data-goto="5" id="colr"> PUBLICITY</a></li>
                                                 <li><a class="trigger " data-animation="49" data-goto="6"id="colr"> QMS</a></li>
 						<li><a class="trigger" data-animation="52" data-goto="6" id="colr"> DESIGN</a></li>
 						<li><a class="trigger" data-animation="60" data-goto="7" id="colr"> WEBOPERATIONS</a></li>
@@ -941,7 +941,7 @@ skrollr.menu.init(s, {
         <script>
             $(function(){
                
-                $('#menu13').circleMenu({direction:'left-half'});
+                $('#menu13').circleMenu({direction:''});
                
                 
                 $('a').on('click',function(evt){if($(this).attr('href')==='#'){evt.preventDefault();}});
