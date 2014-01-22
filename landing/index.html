@@ -1,0 +1,38 @@
+<html>
+<head>
+<script src="../js/jquery.min.js"></script>
+<script src="jquery.transit.min.js"></script>
+<style>
+#circle{
+	width:200px;
+	background:#00F;
+	height:200px;
+	position:absolute;
+	}
+</style>
+</head>
+<body>
+<div id="circle"></div>
+
+
+</body>
+<script>
+$(document).ready(function(e) {
+   $("#circle").css({"top":(parseInt($(window).height())/3),"left":parseInt($(window).width())/3}); 
+  frameRate = 30; // the number of frames per second
+   timeInterval = Math.round( 1000 / frameRate ); 
+   atimer = setInterval( "animateFollower()", timeInterval );
+   $(document).mousemove(function(e) {
+	   var mouseX=e.pageX;
+	   var mouseY=e.pageY;
+	   var degX;
+		degX=5*mouseX/(($(window).width()/2))  
+	   $("#circle").html(mouseX);
+	   $("#circle").append($(window).width())
+    //$("#circle").css({left:mouseX,rotateX:degX});
+	 $("#circle").transition({perspective:'100px',rotateY:'10deg'});
+});
+});
+
+</script>
+</html>
