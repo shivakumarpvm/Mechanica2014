@@ -2,6 +2,10 @@
 <head>
 <script src="jquery.min.js"></script>
 <script src="jquery.transit.min.js"></script>
+	
+	<script language="Javascript" type="text/javascript" src="timer/jquery.lwtCountdown-0.9.5.js"></script>
+	<script language="Javascript" type="text/javascript" src="timer/misc.js"></script>
+	<link rel="Stylesheet" type="text/css" href="timer/dark.css"></link>
 <style>
 body{
 	background-color:#000;
@@ -44,6 +48,39 @@ body{
 <div id="circle"></div>
 <div id="bg"></div>
 <div id="inside2"></div>
+<div id="container">
+				<div id="countdown_dashboard"   >
+			<div class="dash weeks_dash"  style="top:93px;right:310px;">
+				<span class="dash_title">weeks</span>
+				<div class="digit">4</div>
+				<div class="digit">8</div>
+			</div>
+
+			<div class="dash days_dash" style="top:93px;right:310px;">
+				<span class="dash_title">days</span>
+				<div class="digit">0</div>
+				<div class="digit">4</div>
+			</div>
+
+			<div class="dash hours_dash">
+				<span class="dash_title">hours</span>
+				<div class="digit">0</div>
+				<div class="digit">1</div>
+			</div>
+
+			<div class="dash minutes_dash">
+				<span class="dash_title">minutes</span>
+				<div class="digit">4</div>
+				<div class="digit">8</div>
+			</div>
+
+			<div class="dash seconds_dash">
+				<span class="dash_title">seconds</span>
+				<div class="digit">2</div>
+				<div class="digit">9</div>
+			</div>
+
+		</div>
 
 
 
@@ -58,7 +95,7 @@ body{
 $(document).ready(function(e) {
 
 	//$("#mechanicalogo").css({"top":(parseInt($(window).height()/2)-10)});
-		//$("#mechanicalogo").css({"left":(parseInt($(window).width()/2)-30)});
+	$("body").css({"height":(parseInt(parseInt($(window).height())))});
 		$("#bg,#circle,#inside2").css({scale:[0.2,0.2]});
 	$("#bg,#circle,#inside2").transition({scale:[1,1]},1500);
   // $("#circle").css({"top":(parseInt($(window).height())/3),"left":parseInt($(window).width())/3}); 
@@ -84,4 +121,20 @@ $(document).ready(function(e) {
 });
 
 </script>
+<script language="javascript" type="text/javascript">
+			jQuery(document).ready(function() {
+				$('#countdown_dashboard').countDown({
+					targetDate: {
+						'day': 		22,
+						'month': 	03,
+						'year': 	2014,
+						'hour': 	0,
+						'min': 		0,
+						'sec': 		0					}
+				});
+				
+				
+			});
+		</script>
+	
 </html>
