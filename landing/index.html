@@ -5,16 +5,33 @@
 	
 	<script language="Javascript" type="text/javascript" src="timer/jquery.lwtCountdown-0.9.5.js"></script>
 	<script language="Javascript" type="text/javascript" src="timer/misc.js"></script>
+     <script src="imagesloaded.pkgd.min.js"></script>
+     <script src="nprogress.js"></script>
 	<link rel="Stylesheet" type="text/css" href="timer/dark.css"></link>
 <style>
-
-#ccontainer{
-	position:absolute;
-	left:30%;
-	display:block;
-	top:8%;
-	}body{
-	background-color:#000;
+#overlay{
+	z-index: 99999999999;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #000;
+background-image: url(../images/splash.jpg);
+background-size: 100% auto;
+background-position: 0 100%;
+background-repeat: no-repeat;
+text-align: center;
+line-height: 250px;
+cursor: pointer;
+font-size: 1.9em;
+font-family: bebas;
+text-transform: uppercase;
+color:white;
+	}
+body{
+	background:url(landing.jpg) no-repeat #000;
+	background-size:cover;
 	width:100%;
 	height:100%;
 	}
@@ -34,19 +51,36 @@
 }
 #mechanicalogo{
 	position:relative;
-	left:175px;
-	top:200px;
+	left:155px;
+	top:275px;
 	}
 #ccontainer{
 	position:absolute;
 	left:30%;
 	display:block;
-	top:8%;
+	top:-6%;
 	}
 </style>
 </head>
 <body>
-
+<div id="overlay">LOADING...</div>
+ <span id="load-images" style="display:none;">
+                <img src="images/black.png" alt=""/>
+                <img src="images/car.png" alt=""/>
+                <img src="images/yellow.png" alt=""/>
+                <img src="images/box.png" alt=""/>
+                <img src="images/expo.png" alt=""/>
+                <img src="images/competetions.png" alt=""/>
+                <img src="images/quizzes.png" alt=""/>
+                <img src="images/robot.png" alt=""/>
+                <img src="images/talks.png" alt=""/>
+                <img src="images/workshop.png" alt=""/>
+                <img src="images/cube.png" alt=""/>
+                <img src="images/cube2.png" alt=""/>
+                <img src="images/cube3.png" alt=""/>
+                 <img src="images/ibot.png" alt=""/>
+                <img src="images/pie.png" alt=""/>
+            </span>
 <div id="ccontainer">
 <div id="mechanicalogo"><img src="mechanica.png"/></div>
 <div id="circle"><img src="dotted.png"/></div>
@@ -97,6 +131,35 @@
 </body>
 
 <script>
+var uncover =  function(){
+                $('#overlay').unbind('click');
+                $('html, body').animate({
+                    scrollTop: 0
+                },10,function(){
+                    $('#overlay').fadeOut(1000);
+                    //$('a[href='+window.location.hash+']').click();
+                   // alert(window.location.hash);
+					hash_nav();
+					//alert(window.location.hash);
+                   // alert($('a[href='+window.location.hash+']').html())
+                    $(this).css('overflow','auto');
+                    //$('#logo-center').hide().fadeIn(1000);
+                });
+            };
+
+NProgress.start();
+    var doneLoad = false;
+    var slideshow = document.querySelector('#load-images');
+    var pics = document.querySelectorAll('#load-images > img');
+    imagesLoaded( pics, function() {
+        if(!doneLoad)NProgress.inc();
+    });
+    imagesLoaded( slideshow, function() {
+                $('#overlay').html('Click to enter');
+        $('#overlay').bind('click',uncover);
+        NProgress.done();
+        doneLoad = true;
+    });
 
 
 $(document).ready(function(e) {
@@ -113,14 +176,15 @@ $(document).ready(function(e) {
 	   var degY;
 	   var degX;
 	   var opacity;
-	   offsetX=0;//$(window).width()/2;
+	   offsetX=0
+	   offsetY=40;//$(window).width()/2;
 		opacity=(mouseX/$(window).width())+(mouseY/$(window).height())
 		degY=(60*(mouseX-($(window).width()/2))/(($(window).width()))) ; 
 		degX=60*(mouseY-($(window).height()/2))/(($(window).height())) ; 
 		 $("#mechanicalogo").css({"opacity":1-4*((opacity-1)*(opacity-1))});
-	      $("#inside2").css({"top":8*degX,"left":offsetX+(8*degY)});
-	      $("#bg").css({"top":15*degX,"left":offsetX+(15*degY)});
-		  $("#circle").css({"top":12*degX,"left":offsetX+(12*degY)});
+	      $("#inside2").css({"top":offsetY+(8*degX),"left":offsetX+(8*degY)});
+	      $("#bg").css({"top":offsetY+(15*degX),"left":offsetX+(15*degY)});
+		  $("#circle").css({"top":offsetY+(12*degX),"left":offsetX+(12*degY)});
 		});}
 });
 </script>
