@@ -11,29 +11,46 @@ body{
 	background-color:#000;
 	}
 #circle{
-	width:1300px;
+	width:100%;
+		
 	height:100%;
 	position:absolute;
 	background:no-repeat url(2.png);
 	z-index:25;
 	display:block;
 	overflow:visible;
+	background-size:300px;
+	
+
+	
+	
+	
 	}
 #inside2{
-	width:1300px;
+	
 	z-index:100;
+	width:100%;
+		
 	height:100%;
 	position:absolute;
 	background:no-repeat url(1.png);
 	display:block;
+	background-size:300px;
+	
+			
 	}
 #bg{
-	width:1300px;
+	
 	z-index:50;
+width:100%;
+		
 	height:100%;
 	position:absolute;
 	background:no-repeat url(dotted.png);
 	display:block;
+		background-size:300px;
+		
+			
 	}
 #mechanicalogo{
 	width:1300px;
@@ -48,6 +65,7 @@ body{
 <div id="circle"></div>
 <div id="bg"></div>
 <div id="inside2"></div>
+<a class="fancybox fancybox.iframe"  style="z-index:1000; position:absolute;right:0px;width:100px;length:50px;background:#fbfbfb;top:100px;" href="iframe.html" >Iframe</a>
 <div id="container">
 				<div id="countdown_dashboard"   >
 			<div class="dash weeks_dash"  style="top:93px;right:310px;">
@@ -136,5 +154,19 @@ $(document).ready(function(e) {
 				
 			});
 		</script>
+		<script type="text/javascript" src="l/jquery-1.10.1.min.js"></script>
+
+
 	
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			$('.fancybox').fancybox();
+	
+
+		});
+		</script>
 </html>
