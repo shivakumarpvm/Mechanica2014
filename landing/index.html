@@ -7,7 +7,13 @@
 	<script language="Javascript" type="text/javascript" src="timer/misc.js"></script>
 	<link rel="Stylesheet" type="text/css" href="timer/dark.css"></link>
 <style>
-body{
+
+#ccontainer{
+	position:absolute;
+	left:30%;
+	display:block;
+	top:8%;
+	}body{
 	background-color:#000;
 	width:100%;
 	height:100%;
@@ -47,6 +53,8 @@ body{
 <div id="bg"><img src="1.png"/></div>
 <div id="inside2"><img src="2.png"/></div>
 </div>
+<a class="fancybox fancybox.iframe"  style="z-index:1000; position:absolute;right:0px;width:100px;length:50px;background:#fbfbfb;top:100px;" href="iframe.html" >Iframe</a>
+
 <div id="container">
 				<div id="countdown_dashboard"   >
 			<div class="dash weeks_dash"  style="top:93px;right:310px;">
@@ -95,9 +103,9 @@ $(document).ready(function(e) {
 
 	$("body").css({"height":(parseInt(parseInt($(window).height())))});
 	$("#bg,#circle,#inside2").css({scale:[0.2,0.2]});
-	$("#bg").transition({scale:[1,1]},1500);
-	$("#circle").transition({scale:[0.8,0.8]},1500);
-	$("#inside2").transition({scale:[0.6,0.6]},1500); 
+	$("#bg").transition({scale:[0.8,0.8]},1500);
+	$("#circle").transition({scale:[0.62,0.62]},1500);
+	$("#inside2").transition({scale:[0.5,0.5]},1500); 
    setTimeout(mousemove,1800);
    function mousemove(){$(document).mousemove(function(e) {
 	   var mouseX=e.pageX;
@@ -115,7 +123,6 @@ $(document).ready(function(e) {
 		  $("#circle").css({"top":12*degX,"left":offsetX+(12*degY)});
 		});}
 });
-
 </script>
 <script language="javascript" type="text/javascript">
 			jQuery(document).ready(function() {
@@ -132,5 +139,19 @@ $(document).ready(function(e) {
 				
 			});
 		</script>
+		<script type="text/javascript" src="l/jquery-1.10.1.min.js"></script>
+
+
 	
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			$('.fancybox').fancybox();
+	
+
+		});
+		</script>
 </html>
