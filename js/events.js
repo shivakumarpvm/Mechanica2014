@@ -39,7 +39,14 @@ $(document).ready(function(e) {
 	$(".lab_item:nth-child(17) .hexagon-in2").click(function(e) {unleash();var stage=2;var event="unleash"});
 	$(".lab_item:nth-child(14) .hexagon-in2").click(function(e) {
 		var color=$(".lab_item:nth-child(14) .hexagon-in2").css("background-color");
-		$(".lab_item:nth-child(25) .hexagon-in2").animate({backgroundColor:color},1000);
+		var $i; 
+for ($i = 13; $i < 19; ++$i) {$(".lab_item:nth-child("+$i+") .hexagon-in2").animate({backgroundColor:color},1000);}
+$(".lab_item:nth-child(27) .hexagon-in2").animate({opacity:1},10);
+for ($i = 22; $i < 29; ++$i) {$(".lab_item:nth-child("+$i+") .hexagon-in2").animate({backgroundColor:color},1000);}
+ 
+for ($i = 33; $i < 39; ++$i) {$(".lab_item:nth-child("+$i+") .hexagon-in2").animate({backgroundColor:color},1000);}
+		
+	
      if(event=="design"){}   
     });
 	// var s=$('.lab_item:nth-child(17) .hexagon-in2').css("background-color");

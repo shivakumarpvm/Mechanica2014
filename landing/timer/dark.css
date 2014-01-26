@@ -1,22 +1,8 @@
 
-
-
-
-h1 {
-	font-size: 38pt;
-	border-bottom: 1px solid #000;
-	margin: 0;
-}
-
-h2.subtitle {
-	margin-top: 0px;
-	margin-bottom: 40px;
-}
-
 #container {
 	position:absolute;
-  top:800px;
-  right:20px;
+  bottom:205px;
+  left:-115px;
 	width: 1500px;
 	color: #000;
 	zoom:.6;
