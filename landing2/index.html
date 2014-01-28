@@ -1,0 +1,221 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script src="jquery.transit.min.js"></script>
+	
+	<script language="Javascript" type="text/javascript" src="timer/jquery.lwtCountdown-0.9.5.js"></script>
+	<script language="Javascript" type="text/javascript" src="timer/misc.js"></script>
+     <script src="imagesloaded.pkgd.min.js"></script>
+     <script src="nprogress.js"></script>
+	<link rel="Stylesheet" type="text/css" href="timer/dark.css"></link>
+<style>
+#overlay{
+	z-index: 99999999999;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #000;
+background-image: url(../images/splash.jpg);
+background-size: 100% auto;
+background-position: 0 100%;
+background-repeat: no-repeat;
+text-align: center;
+line-height: 250px;
+cursor: pointer;
+font-size: 1.9em;
+font-family: bebas;
+text-transform: uppercase;
+color:white;
+	}
+body{
+	background:url(landing.jpg) no-repeat #000;
+	background-size:cover;
+	width:100%;
+	height:100%;
+	}
+#circle{
+	position:absolute;
+	z-index:25;
+	display:block;
+}
+#inside2{
+	position:absolute;
+	display:block;
+}
+#bg{
+	z-index:50;
+	position:absolute;
+	display:block;
+}
+#mechanicalogo{
+	position:relative;
+	left:155px;
+	top:275px;
+	}
+#ccontainer{
+	position:absolute;
+	left:30%;
+	display:block;
+	top:-6%;
+	}
+</style>
+</head>
+<body>
+<div id="overlay">LOADING...</div>
+ <span id="load-images" style="display:none;">
+                <img src="images/black.png" alt=""/>
+                <img src="images/car.png" alt=""/>
+                <img src="images/yellow.png" alt=""/>
+                <img src="images/box.png" alt=""/>
+                <img src="images/expo.png" alt=""/>
+                <img src="images/competetions.png" alt=""/>
+                <img src="images/quizzes.png" alt=""/>
+                <img src="images/robot.png" alt=""/>
+                <img src="images/talks.png" alt=""/>
+                <img src="images/workshop.png" alt=""/>
+                <img src="images/cube.png" alt=""/>
+                <img src="images/cube2.png" alt=""/>
+                <img src="images/cube3.png" alt=""/>
+                 <img src="images/ibot.png" alt=""/>
+                <img src="images/pie.png" alt=""/>
+            </span>
+<div id="ccontainer">
+<div id="mechanicalogo"><img src="mechanica.png"/></div>
+<div id="circle"><img src="dotted.png"/></div>
+<div id="bg"><img src="1.png"/></div>
+<div id="inside2"><img src="2.png"/></div>
+</div>
+<a class="fancybox fancybox.iframe"  style="z-index:1000; position:absolute;right:0px;width:100px;length:50px;background:#fbfbfb;top:100px;" href="iframe.html" >Iframe</a>
+
+<div id="container">
+				<div id="countdown_dashboard"   >
+			<div class="dash weeks_dash"  style="top:93px;right:310px;">
+				<span class="dash_title">weeks</span>
+				<div class="digit">4</div>
+				<div class="digit">8</div>
+			</div>
+
+			<div class="dash days_dash" style="top:93px;right:310px;">
+				<span class="dash_title">days</span>
+				<div class="digit">0</div>
+				<div class="digit">4</div>
+			</div>
+
+			<div class="dash hours_dash">
+				<span class="dash_title">hours</span>
+				<div class="digit">0</div>
+				<div class="digit">1</div>
+			</div>
+
+			<div class="dash minutes_dash">
+				<span class="dash_title">minutes</span>
+				<div class="digit">4</div>
+				<div class="digit">8</div>
+			</div>
+
+			<div class="dash seconds_dash">
+				<span class="dash_title">seconds</span>
+				<div class="digit">2</div>
+				<div class="digit">9</div>
+			</div>
+
+		</div>
+
+
+
+		
+		
+
+</body>
+
+<script>
+var uncover =  function(){
+                $('#overlay').unbind('click');
+                $('html, body').animate({
+                    scrollTop: 0
+                },10,function(){
+                    $('#overlay').fadeOut(1000);
+                    //$('a[href='+window.location.hash+']').click();
+                   // alert(window.location.hash);
+					hash_nav();
+					//alert(window.location.hash);
+                   // alert($('a[href='+window.location.hash+']').html())
+                    $(this).css('overflow','auto');
+                    //$('#logo-center').hide().fadeIn(1000);
+                });
+            };
+
+NProgress.start();
+    var doneLoad = false;
+    var slideshow = document.querySelector('#load-images');
+    var pics = document.querySelectorAll('#load-images > img');
+    imagesLoaded( pics, function() {
+        if(!doneLoad)NProgress.inc();
+    });
+    imagesLoaded( slideshow, function() {
+                $('#overlay').html('Click to enter');
+        $('#overlay').bind('click',uncover);
+        NProgress.done();
+        doneLoad = true;
+    });
+
+
+$(document).ready(function(e) {
+
+	$("body").css({"height":(parseInt(parseInt($(window).height())))});
+	$("#bg,#circle,#inside2").css({scale:[0.2,0.2]});
+	$("#bg").transition({scale:[0.8,0.8]},1500);
+	$("#circle").transition({scale:[0.62,0.62]},1500);
+	$("#inside2").transition({scale:[0.5,0.5]},1500); 
+   setTimeout(mousemove,1800);
+   function mousemove(){$(document).mousemove(function(e) {
+	   var mouseX=e.pageX;
+	   var mouseY=e.pageY;
+	   var degY;
+	   var degX;
+	   var opacity;
+	   offsetX=0
+	   offsetY=40;//$(window).width()/2;
+		opacity=(mouseX/$(window).width())+(mouseY/$(window).height())
+		degY=(60*(mouseX-($(window).width()/2))/(($(window).width()))) ; 
+		degX=60*(mouseY-($(window).height()/2))/(($(window).height())) ; 
+		 $("#mechanicalogo").css({"opacity":1-4*((opacity-1)*(opacity-1))});
+	      $("#inside2").css({"top":offsetY+(8*degX),"left":offsetX+(8*degY)});
+	      $("#bg").css({"top":offsetY+(15*degX),"left":offsetX+(15*degY)});
+		  $("#circle").css({"top":offsetY+(12*degX),"left":offsetX+(12*degY)});
+		});}
+});
+</script>
+<script language="javascript" type="text/javascript">
+			jQuery(document).ready(function() {
+				$('#countdown_dashboard').countDown({
+					targetDate: {
+						'day': 		22,
+						'month': 	03,
+						'year': 	2014,
+						'hour': 	0,
+						'min': 		0,
+						'sec': 		0					}
+				});
+				
+				
+			});
+		</script>
+		<script type="text/javascript" src="l/jquery-1.10.1.min.js"></script>
+
+
+	
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			$('.fancybox').fancybox();
+	
+
+		});
+		</script>
+</html>
