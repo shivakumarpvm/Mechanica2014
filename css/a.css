@@ -27,7 +27,7 @@ position:absolute
     text-decoration: none;
      color:#AEF0ED;
 
-	position:absolute;
+	position:;
 	
 	
 	
@@ -40,7 +40,7 @@ position:absolute
 	 border-radius:45px;
 	 width:150px;
 	 height:90px;
-	 margin-left:-50px;
+	
 	 
 	 
 
@@ -58,5 +58,5 @@ position:absolute
 
 #menu13{
     top:135px;
-    right:4px;
+    right:-20px;
 }

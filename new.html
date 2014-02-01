@@ -132,7 +132,7 @@ margin-top:10px;
 	height:40px;
 	border-radius:20px;
    
-   display:block;
+ 
    background:transparent;
   
    
@@ -195,7 +195,10 @@ margin-top:10px;
 color:#E74C3C;
 text-align:center;
 margin-bottom:10px;
-background:green;}
+
+font-size:15px;
+}
+
 
 </style>
 
@@ -275,13 +278,13 @@ background:green;}
             
                 <ul class="bmenu"  >
 				        
-						<li style="background:#1ABC9C;height:65px;"> <a class="trig " style="color:#ECF0F1;top:20px;text-align:center;width:200px;"><h1 style="font-size:26px;">HOSPITALITY</h1></a></li>
-						<li style="background:#1ABC9C;border-top:2px solid white;"> <a style="color:#ECF0F1;top:10px;text-align:center;width:200px;"class="trigger" data-animation="62" data-goto="1">INTRODUCTION</a></li>
-					    <li style="background:#1ABC9C;border-top:2px solid white;"> <a style="color:#ECF0F1;top:10px;text-align:center;width:200px;"class="trigger" data-animation="40" data-goto="2"> REACHING IITM</a></li>
-						<li style="background:#1ABC9C;border-top:2px solid white;"> <a style="color:#ECF0F1;top:10px;text-align:center;width:200px;" class="trigger" data-animation="66" data-goto="3"> HOSPI DESK</a></li>
-						<li style="background:#1ABC9C;border-top:2px solid white;"> <a style="color:#ECF0F1;top:10px;text-align:center;width:200px;" class="trigger" data-animation="50" data-goto="4">Accomodation</a></li>
-						<li style="background:#1ABC9C;border-top:2px solid white;"> <a style="color:#ECF0F1;top:10px;text-align:center;width:200px;" class="trigger" data-animation="44" data-goto="5"> FAQ</a></li>
-						<li style="background:#1ABC9C;border-top:2px solid white;"> <a style="color:#ECF0F1;top:10px;text-align:center;width:200px;" class="trigger" data-animation="52" data-goto="6"> Contact US</a></li>
+						<li style="background:#1ABC9C;height:65px;"> <a class="trig " style="color:#ECF0F1;top:20px;text-align:center;width:200px;display:block;"><h1 style="font-size:26px;">HOSPITALITY</h1></a></li>
+						<li style="background:#1ABC9C;border-top:2px solid white;"> <a style="color:#ECF0F1;top:10px;text-align:center;width:200px;display:block;"class="trigger" data-animation="62" data-goto="1">INTRODUCTION</a></li>
+					    <li style="background:#1ABC9C;border-top:2px solid white;"> <a style="color:#ECF0F1;top:10px;text-align:center;width:200px;display:block;"class="trigger" data-animation="40" data-goto="2"> REACHING IITM</a></li>
+						<li style="background:#1ABC9C;border-top:2px solid white;"> <a style="color:#ECF0F1;top:10px;text-align:center;width:200px;display:block;" class="trigger" data-animation="66" data-goto="3"> HOSPI DESK</a></li>
+						<li style="background:#1ABC9C;border-top:2px solid white;"> <a style="color:#ECF0F1;top:10px;text-align:center;width:200px;display:block;" class="trigger" data-animation="50" data-goto="4">Accomodation</a></li>
+						<li style="background:#1ABC9C;border-top:2px solid white;"> <a style="color:#ECF0F1;top:10px;text-align:center;width:200px;display:block;" class="trigger" data-animation="44" data-goto="5"> FAQ</a></li>
+						<li style="background:#1ABC9C;border-top:2px solid white;"> <a style="color:#ECF0F1;top:10px;text-align:center;width:200px;display:block;" class="trigger" data-animation="52" data-goto="6"> Contact US</a></li>
 						<!--<li><a class="trigger" data-animation="60" data-goto="7"> 7</a></li>
 						<li><a class="trigger" data-animation="62" data-goto="8"> 8</a></li>
 						<li><a class="trigger" data-animation="66" data-goto="9"> 9</a></li>
@@ -831,10 +834,10 @@ data-6000="top:0%;">
                        <li><a class="trigger " data-animation="64" data-goto="3" id="colr"> SPONSRSHIP</a></li>
                        <li> <a class="trigger " data-animation="41" data-goto="4" id="colr">HOSPITALITY</a></li>
                        <li><a class="trigger " data-animation="67" data-goto="5" id="colr"> PUBLICITY</a></li>
-                        <li><a class="trigger " data-animation="49" data-goto="6"id="colr"> QMS</a></li>
+                        <li><a class="trigger " data-animation="49" data-goto="6"id="colr"> WEBOPERATIONS</a></li>
 						<li><a class="trigger" data-animation="52" data-goto="7" id="colr"> DESIGN</a></li>
-						<li><a class="trigger" data-animation="60" data-goto="8" id="colr"> WEBOPERATIONS</a></li>
-						<li><a class="trigger" data-animation="62" data-goto="9" id="colr"> SECRATARIES</a></li>
+						<li><a class="trigger" data-animation="60" data-goto="8" id="colr" >QMS </a></li>
+						<li><a class="trigger" data-animation="62" data-goto="9" id="colr" > SECRATARIES</a></li>
 						
                 </ul>
            </div>
@@ -944,7 +947,7 @@ skrollr.menu.init(s, {
             $(function(){
                
               //  $('#menu13').circleMenu({direction:'full'});
-				  $('#menu13').circleMenu({angle:{start:255, end:100}});
+				  $('#menu13').circleMenu({angle:{start:235, end:120}});
                
                 
                 $('a').on('click',function(evt){if($(this).attr('href')==='#'){evt.preventDefault();}});
