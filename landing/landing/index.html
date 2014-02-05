@@ -1,0 +1,368 @@
+<html>
+<head>
+ <link href="css/flat-ui.css" rel="stylesheet">
+ <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="inc/TimeCircles.css" />
+
+<style>
+.layer{
+	background-size:cover;
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	}
+#landing{
+	background:url(images/landing.png);
+	background-size:cover;
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	}
+#main{
+	background:url(images/main.jpg);
+	background-size:cover;
+	
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	z-index:-1;
+	}
+#events{
+	background:url(images/events.jpg);
+	background-size:cover;
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	z-index:10;
+	}
+#spons{
+	/*background:url(images/grey.jpg);*/
+	background-color:#FFF;
+	background-size:cover;
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	}
+#contact{
+	background:url(images/timer.jpg);
+	background-size:cover;
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	}
+#check{color:orange;position:fixed;top:50px;opacity:0;z-index:100}
+#main_black{
+	width:60%;
+	height:100%;
+	background-color:#000;
+	color:#FFF;
+	margin:0 auto;
+	}
+#main_iitm{
+	background:url(images/imea.png)no-repeat;
+	background-position:left;
+	position:fixed;
+	width:120px;
+	height:120px;
+}
+#main_mea{
+	background:url(images/imea.png) no-repeat;
+	background-position:right;
+	position:fixed;
+	width:120px;
+	height:120px;
+}
+#main_mechanica{
+	background:url(images/mechanicalogo.png);
+	background-size:cover;
+	position:fixed;
+	width:450px;
+	height:130px;
+	left:33%;top:60%;
+}
+#main_other{
+	position:fixed;
+	left:43%;top:38%;
+	color:#FFF;
+	font-size:2em;
+	font-family:verdana;
+}
+#sponslogo1{
+	background:url(images/sparsha.jpg);
+	position: absolute;
+	left:10%;top:10%;
+	width:130px;
+	height:130px;
+	
+}
+#sponslogo2{
+	background:url(images/expertshub.jpg);
+	position: absolute;
+	left:30%;top:10%;
+	width:130px;
+	height:130px;
+	
+}
+#sponslogo3{
+	background:url(images/lg.png);
+	position: absolute;
+	left:50%;top:10%;
+	width:130px;
+	height:130px;
+	
+}
+#sponslogo4{
+	background:url(images/indian.png);
+	position: absolute;
+	left:10%;top:40%;
+	width:130px;
+	height:130px;
+	
+}
+#events_days{color:#FFF;font-family:Verdana; font-size:24px;left:6%;z-index:11}
+#events_events{color:#FFF;font-family:Verdana; font-size:24px;left:6%;z-index:11}
+#events_money{color:#FFF;font-family:Verdana; font-size:24px;left:6%;z-index:11}
+#layer1{ background:url(images/layer3.png)}
+#layer2{ background:url(images/layer2.png)}
+#layer3{ background:url(images/layer1.png)}
+.k2{
+	background:#000;
+	padding:12px;
+	font-family:verdena;
+	font-size:2em;
+	position:relative;
+	}
+.event20{
+	background:#fff;
+	padding:12px;
+	font-family:verdena;
+	font-size:2em;
+	position:relative;
+	color:#000;
+	}
+.money{
+	background:#fff;
+	padding:12px;
+	font-family:verdena;
+	font-size:2em;
+	position:relative;
+	color:#000;
+	}
+#logo{
+	width:600px;
+	height:170px;
+	position:absolute;
+	left:29%;
+	top:40%;
+	background:url(images/mechanicalogo.png);
+	background-size:cover;
+	}
+#down{
+	background:url(images/down.png) no-repeat;
+	width:70px;
+	height:81px;
+	background-position:top;
+	position:absolute;
+	bottom:70px;
+	left:50%;
+}
+#down:hover{
+	background-position:bottom;
+	}
+.lastbuttons{
+	position:absolute;
+	top:300px;
+	background-position:top;
+	width:270px;
+	height:46px;
+	}
+#sponsbro:hover,#contactbutt:hover{
+	background-position:bottom;
+	}
+#sponsbro{
+	background:url(images/sponsbro.png) no-repeat;
+	left:27%;
+	}
+#contactbutt{
+	background:url(images/contact.png) no-repeat;
+	left:53%;
+	}
+.sponslogo{
+	display:inline-block;
+	padding:5px 5px 30px 5px;
+	}
+#sponsheading{
+	font-family:helvetica;
+	color:#000;
+	text-transform:uppercase;
+	
+	}
+#overlay{
+	z-index: 99999999999;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #000;
+background-image: url(../images/splash.jpg);
+background-size: 100% auto;
+background-position: 0 100%;
+background-repeat: no-repeat;
+text-align: center;
+line-height: 250px;
+cursor: pointer;
+font-size: 1.9em;
+font-family: bebas;
+text-transform: uppercase;
+color:white;
+	}
+</style>
+</head>
+<body>
+<div id="overlay">LOADING...</div>
+ <span id="load-images" style="display:none;">
+                <img src="images/landing.png" alt=""/>
+                <img src="images/events.jpg" alt=""/>
+                <img src="images/layer1.png" alt=""/>
+                <img src="images/layer2.png" alt=""/>
+                <img src="images/layer3.png" alt=""/>
+                <img src="images/down.png" alt=""/>
+                <img src="images/imea.png" alt=""/>
+                <img src="images/mechanicalogo.png" alt=""/>
+                <img src="images/main.jpg" alt=""/>
+                <img src="images/contact.png" alt=""/>
+                <img src="images/sponsbro.png" alt=""/>
+                <img src="sponsimg/alstrut.jpg" alt=""/>
+                <img src="sponsimg/avocarbon.jpg" alt=""/>
+                <img src="sponsimg/harshaes.jpg" alt=""/>
+                 <img src="sponsimg/2019.png" alt=""/>
+                <img src="sponsimg/lgspons.jpg" alt=""/>
+            </span>
+
+
+<section id="pele">
+<div id="main_black" data-0="opacity:0" data-1200="opacity:1" data-2400="0"></div>
+<div id="main_iitm" data-0="left:-20%;top:10%;" data-1200="left:30%;top:10%;" data-2400="left:30%;top:10%;" data-3600="left:-20%;top:10%;"></div>
+<div id="main_mea" data-0="left:120%;top:10%;" data-1200="left:60%;top:10%;" data-2400="left:60%;top:10%;" data-3600="left:120%;top:10%;"></div>
+<div id="main_mechanica" data-0="opacity:0;zoom:0" data-1200="opacity:0;zoom:0" data-1800="opacity:1;zoom:1"  data-2400="opacity:1;zoom:1" data-3600="opacity:0;zoom:0"></div>
+<div id="main_other">PRESENTS</div>
+
+<div id="events_days" style="position:fixed;" data-0="top:100%;" data-3600="top:100%;" data-4000="top:20%;" data-4200="top:-100%;">
+<span class="k2">2K+</span><br/>
+<span class="k2" style="top:10px">Footfall</span>
+</div>
+<div id="events_events" style="position:fixed;" data-0="top:100%;" data-4000="top:100%;" data-4400="top:20%;" data-4800="top:-100%;">
+<span class="event20">20+</span><br/>
+<span class="event20" style="top:10px">Events</span></div>
+<div id="events_money" style="position:fixed;" data-0="top:100%;" data-4400="top:100%;" data-4800="top:20%;" data-5200="top:-100%;">
+<span class="money">1.5L</span><br/>
+<span class="money" style="top:10px">Prize Money</span></div>
+</section>
+<section id="landing" class="slide" style="position:fixed;" data-0="top:0%;" data-1200="top:-100%;" >
+<ul id="scene" style="margin:0px">
+  <li class="layer" data-depth="0.10" id="layer1"></li>
+  <li class="layer" data-depth="0.20" id="layer2"></li>
+  <li class="layer" data-depth="0.40" id="layer3"></li>
+</ul>
+<div id="down"></div>
+<span id="logo"></span>
+
+</section>
+<section id="main" class="slide" style="position:fixed;" data-0="top:100%;" data-1200="top:0%;" data-2400="top:0%;" data-3600="top:-100%;" data-4800="top:-100%;">
+<div id="main_background"></div>
+
+</section>
+<section id="events"  class="slide" style="position:fixed;" data-0="top:100%;" data-2400="top:100%;" data-3600="top:0%;" data-4800="top:0%;" data-6000="top:-100%;">
+
+</section>
+<section id="spons" style="position:fixed;" data-0="top:100%;" data-4800="top:100%;" data-6000="top:0%;" data-7200="top:-100%;">
+<center><h2 id="sponsheading">Previous Sponsors</h2></center>
+<a class="sponslogo" href=""><img src="sponsimg/alstrut.jpg" width="250px"/></a>
+<a class="sponslogo" href=""><img src="sponsimg/avocarbon.jpg" width="250px"/></a>
+<a class="sponslogo" href=""><img src="sponsimg/indianspons.png" width="250px"/></a>
+<a class="sponslogo" href=""><img src="sponsimg/lgspons.jpg" width="250px"/></a>
+<a class="sponslogo" href=""><img src="sponsimg/solidworks.png" width="250px"/></a>
+
+<a class="sponslogo" href=""><img src="sponsimg/expertshub.jpg" width="250px"/></a>
+<a class="sponslogo" href=""><img src="sponsimg/harshaes.jpg" width="250px"/></a>
+<a class="sponslogo" href=""><img src="sponsimg/mmfestlogo.jpg" width="250px"/></a>
+<a class="sponslogo" href=""><img src="sponsimg/robospons.png" width="250px"/></a>
+<a class="sponslogo" href=""><img src="sponsimg/2019.png" width="250px"/></a>
+</section>
+<section id="contact" class="slide" style="position:fixed;" data-0="top:100%;" data-6000="top:100%;" data-7200="top:0%;">
+<a href="https://www.mechanica.org.in/2014/landing/landing/spons_brochure.pdf" target="_blank"><div  class="lastbuttons" id="sponsbro"></div></a>
+<div id="contactbutt" class="lastbuttons"></div>
+<div class="someTimer" data-date="2014-03-22 00:00:00" style="width: 500px; height: 125px;bottom:42px;left:-52px; padding: 0px;position:absolute;margin-top:250px;margin-left:450px;background-color:transparent;color:#fff"></div>
+</section>
+
+<div id="check"></div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="imagesloaded.pkgd.min.js"></script>
+<script src="nprogress.js"></script>
+<script src="js/parallax.js"></script>
+
+<script src="js/jquery-ui.js"></script>
+<script src="js/skrollr.js"></script>
+<script src="js/skrollr.menu.js"></script>
+<script type="text/javascript" src="inc/TimeCircles.js"></script> 
+
+<script>
+            var timeCircles = $(".someTimer").TimeCircles();
+        </script>
+ <script type="text/javascript">
+ var uncover =  function(){
+                $('#overlay').unbind('click');
+                $('html, body').animate({
+                    scrollTop: 0
+                },10,function(){
+                    $('#overlay').fadeOut(1000);
+                    //$('a[href='+window.location.hash+']').click();
+                   // alert(window.location.hash);
+					//hash_nav();
+					//alert(window.location.hash);
+                   // alert($('a[href='+window.location.hash+']').html())
+                    $(this).css('overflow','auto');
+                    //$('#logo-center').hide().fadeIn(1000);
+                });
+                $("#layer1,#layer2,#layer3").animate({top:"-1200px"},0);
+			$("#layer1").animate({top:"0px",delay:200},2400,"easeInOutExpo");
+			$("#layer2").animate({top:"0px",delay:200},2600,"easeInOutExpo");
+			$("#layer3").animate({top:"0px",delay:200},2800,"easeInOutExpo");
+            };
+
+NProgress.start();
+    var doneLoad = false;
+    var slideshow = document.querySelector('#load-images');
+    var pics = document.querySelectorAll('#load-images > img');
+    imagesLoaded( pics, function() {
+        if(!doneLoad)NProgress.inc();
+    });
+    imagesLoaded( slideshow, function() {
+                $('#overlay').html('Click to enter');
+        $('#overlay').bind('click',uncover);
+        NProgress.done();
+        doneLoad = true;
+    });
+
+ 
+ 
+	 
+ var scene = document.getElementById('scene');
+var parallax = new Parallax(scene);
+
+	var s = skrollr.init({
+	smoothScrolling: true
+});
+skrollr.menu.init(s, {
+    animate: true,
+    easing: 'sqrt',
+    duration: function (currentTop, targetTop) {
+        return 1200 
+    },
+});
+	</script>
+    <script src="js/script.js"></script>
+</html>
